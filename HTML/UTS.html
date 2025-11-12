@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Ruangan</title>
+    <link rel="stylesheet" href="../CSS/UTS.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Booking Ruangan</h2>
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="namaPeminjam">Nama Peminjam :</label>
+                <input type="text" id="namaPeminjam" name="namaPeminjam" required>
+            </div>
+
+            <div class="form-group">
+                <label for="namaRuangan">Nama Ruangan :</label>
+                <select id="namaRuangan" name="namaRuangan">
+                    <option value="Aula Cendrawasih">Aula Cendrawasih</option>
+                    <option value="Aula Garuda">Aula Garuda</option>
+                    <option value="Ruang Seminar A">Ruang Seminar A</option>
+                    <option value="Ruang Seminar B">Ruang Seminar B</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="deskripsiKegiatan">Deskripsi Kegiatan :</label>
+                <textarea id="deskripsiKegiatan" name="deskripsiKegiatan" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Fasilitas Tambahan :</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="soundSystem" name="fasilitas" value="Sound System">
+                        <label for="soundSystem">Sound System</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="wifi" name="fasilitas" value="Wifi">
+                        <label for="wifi">Wifi</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="layarBesar" name="fasilitas" value="Layar Besar">
+                        <label for="layarBesar">Layar Besar</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="katering" name="fasilitas" value="Katering">
+                        <label for="katering">Katering</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tanggalPinjam">Tanggal Pinjam :</label>
+                <div class="date-input-wrapper">
+                    <input type="date" id="tanggalPinjam" name="tanggalPinjam" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="kontakPerson">Kontak Person :</label>
+                <input type="text" id="kontakPerson" name="kontakPerson" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telpon">Telpon/HP :</label>
+                <input type="tel" id="telpon" name="telpon" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
